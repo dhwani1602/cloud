@@ -22,7 +22,6 @@
     "redux-saga": "^1.1.3"
   },
   "scripts": {
-  "test": "react-scripts test --coverage"
     "start": "node server/server.js",
     "client": "react-scripts start",
     "server": "nodemon --watch server server/server.js",
