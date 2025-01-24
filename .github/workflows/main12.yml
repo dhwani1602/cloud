@@ -1,0 +1,25 @@
+name: Build and Deploy
+
+on:
+ push:
+   branches: [main]
+
+env:
+  CI: false
+
+jobs:
+   build:
+    name: Build
+    runs-on: self-hosted
+
+    steps:
+     -name: checkout repo
+      uses: actions/checkout@v2
+
+    -name: Setup Node
+     uses: actions/setup-node@v1
+     with:
+       node-version: 22
+
+    
+      
